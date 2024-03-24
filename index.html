@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de texto</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Encriptador de texto.</h1>
+    </header>
+    <main>
+        <div class="contenedor">
+        <div class="textoEntrada">
+                <label for="textoUsuario"></label>
+                <textarea id="textoUsuario" cols="50" rows="30" placeholder="Ingresa el texto a Encriptar o Desencriptar"></textarea>
+                <section class="avisoBotones">
+                    <p id="aviso"> &#33; Solo letras minúsculas y sin acentos</p>
+                    <button class="boton" id="encriptar">Encriptar</button>
+                    <button class="boton" id="desencriptar">Desencriptar</button>
+                    <button class="boton" id="copiar">Copiar</button>
+                </section>    
+        </div>
+        <div class="textoSalida" id="textoSalidaVisible">
+            <img id="muñeco" src="/muñeco.png" alt="Error">
+            <p id="parrafoUno">Ningún texto fue encontrado&#33;</p>
+            <p id="parrafoDos">Ingresa el texto que desees encriptar o desencriptar.</p>
+        </div>
+        <div class="textoSalida" id="textoSalidaOculta">
+            <p id="textoEncriptado"></p>
+        </div>
+    </div>
+    </main>
+    <footer class="piePagina">
+        <p id="textoFooter">Creado por Jose Rojas, 2024</p>
+    </footer>
+    <script src="app.js"></script>
+</body>
+</html>
+
