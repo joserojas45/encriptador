@@ -58,7 +58,7 @@ h1{
   text-align: center;
   width: 45%;
 }
-#muñeco{
+#imagen{
   padding-left: 25%;
   padding-right: 25%;
 }
@@ -137,7 +137,10 @@ h1{
     max-height: 470px;
     overflow: auto;
   }
-  #muñeco{
+  #textoSalidaOculta{
+    width: 350px;
+  }
+  #imagen{
     padding-left: 0;
   }
   .piePagina{
